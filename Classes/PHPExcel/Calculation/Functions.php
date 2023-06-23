@@ -321,7 +321,7 @@ class PHPExcel_Calculation_Functions
         if (!isset($condition[0])) {
             $condition = '=""';
         }
-        if (!in_array($condition[0], array('>', '<', '='))) {
+        if (!in_array($condition[0] , array('>', '<', '='))) {
             if (!is_numeric($condition)) {
                 $condition = PHPExcel_Calculation::wrapResult(strtoupper($condition));
             }
